@@ -20,13 +20,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: mainScene)
         
-        let tabBarController = UITabBarController()
-        let navController = UINavigationController()
-        navController.viewControllers = [PhotoMainModuleAssembly.build()]
-        tabBarController.setViewControllers([navController], animated: false)
-        tabBarController.selectedIndex = 0
+        let navigationController = UINavigationController()
+        let builder = ModuleBuilder.init()
+        let coordinator = Coordinator(navigationController: navigationController,
+                                      builder: builder)
+        coordinator.pushInitialController()
         
-        window?.rootViewController = tabBarController
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 

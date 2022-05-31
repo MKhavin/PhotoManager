@@ -12,11 +12,19 @@
 		510644DC2836DF370086210E /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510644DB2836DF370086210E /* PhotoViewController.swift */; };
 		510644E12836DF3A0086210E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 510644E02836DF3A0086210E /* Assets.xcassets */; };
 		510644E42836DF3A0086210E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510644E22836DF3A0086210E /* LaunchScreen.storyboard */; };
+		510D6E06283D832500078922 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510D6E05283D832400078922 /* SettingsTableViewCell.swift */; };
+		5138B5AE283B5E0D0062DEB3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138B5AD283B5E0D0062DEB3 /* SettingsViewController.swift */; };
+		5138B5B2283B5E260062DEB3 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138B5B1283B5E260062DEB3 /* SettingsPresenter.swift */; };
+		5162C5472845637C00DA4538 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5162C5462845637C00DA4538 /* KeychainService.swift */; };
+		51862268283FF0E300ECFF11 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 51862267283FF0E300ECFF11 /* KeychainAccess */; };
+		5186226E283FF13600ECFF11 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5186226D283FF13600ECFF11 /* LogInViewController.swift */; };
+		51862271283FF4DA00ECFF11 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51862270283FF4DA00ECFF11 /* Coordinator.swift */; };
+		5186227328400AFC00ECFF11 /* LogInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5186227228400AFC00ECFF11 /* LogInPresenter.swift */; };
 		51B9E7A2283829B4007B9D76 /* FlieManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B9E7A1283829B4007B9D76 /* FlieManagerService.swift */; };
 		51B9E7A42838315E007B9D76 /* PhotoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B9E7A32838315E007B9D76 /* PhotoPresenter.swift */; };
-		51B9E7A62838424D007B9D76 /* PhotoMainModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B9E7A52838424D007B9D76 /* PhotoMainModuleAssembly.swift */; };
 		51B9E7A928384289007B9D76 /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B9E7A828384289007B9D76 /* ModuleAssembly.swift */; };
 		51B9E7AB2838464D007B9D76 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B9E7AA2838464D007B9D76 /* PhotoCollectionViewCell.swift */; };
+		51E91B592846B8D80070AB31 /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E91B582846B8D80070AB31 /* UserDefaultsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +35,18 @@
 		510644E02836DF3A0086210E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		510644E32836DF3A0086210E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		510644E52836DF3A0086210E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		510D6E05283D832400078922 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		5138B5AD283B5E0D0062DEB3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5138B5B1283B5E260062DEB3 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		5162C5462845637C00DA4538 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		5186226D283FF13600ECFF11 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		51862270283FF4DA00ECFF11 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5186227228400AFC00ECFF11 /* LogInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPresenter.swift; sourceTree = "<group>"; };
 		51B9E7A1283829B4007B9D76 /* FlieManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlieManagerService.swift; sourceTree = "<group>"; };
 		51B9E7A32838315E007B9D76 /* PhotoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPresenter.swift; sourceTree = "<group>"; };
-		51B9E7A52838424D007B9D76 /* PhotoMainModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMainModuleAssembly.swift; sourceTree = "<group>"; };
 		51B9E7A828384289007B9D76 /* ModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
 		51B9E7AA2838464D007B9D76 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		51E91B582846B8D80070AB31 /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51862268283FF0E300ECFF11 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,8 +80,12 @@
 		510644D62836DF370086210E /* PhotoManager */ = {
 			isa = PBXGroup;
 			children = (
+				51862269283FF0F100ECFF11 /* LogInModule */,
+				51B9E7A0283829A3007B9D76 /* Services */,
 				51B9E7A728384264007B9D76 /* ModuleAssembly */,
 				510644EB2836E2840086210E /* PhotoMainModule */,
+				5138B5A9283B5D640062DEB3 /* SettingsModule */,
+				51862270283FF4DA00ECFF11 /* Coordinator.swift */,
 				510644D72836DF370086210E /* AppDelegate.swift */,
 				510644D92836DF370086210E /* SceneDelegate.swift */,
 				510644E02836DF3A0086210E /* Assets.xcassets */,
@@ -78,7 +98,6 @@
 		510644EB2836E2840086210E /* PhotoMainModule */ = {
 			isa = PBXGroup;
 			children = (
-				51B9E7A0283829A3007B9D76 /* Services */,
 				510644EC2836E29D0086210E /* Model */,
 				510644ED2836E2A20086210E /* View */,
 				510644EE2836E2A70086210E /* Presenter */,
@@ -110,10 +129,79 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		5138B5A9283B5D640062DEB3 /* SettingsModule */ = {
+			isa = PBXGroup;
+			children = (
+				5138B5AC283B5DFA0062DEB3 /* Model */,
+				5138B5AB283B5DF30062DEB3 /* View */,
+				5138B5AA283B5DEC0062DEB3 /* Presenter */,
+			);
+			path = SettingsModule;
+			sourceTree = "<group>";
+		};
+		5138B5AA283B5DEC0062DEB3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5138B5B1283B5E260062DEB3 /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5138B5AB283B5DF30062DEB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5138B5AD283B5E0D0062DEB3 /* SettingsViewController.swift */,
+				510D6E05283D832400078922 /* SettingsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5138B5AC283B5DFA0062DEB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		51862269283FF0F100ECFF11 /* LogInModule */ = {
+			isa = PBXGroup;
+			children = (
+				5186226C283FF11A00ECFF11 /* Model */,
+				5186226B283FF11500ECFF11 /* View */,
+				5186226A283FF10C00ECFF11 /* Presenter */,
+			);
+			path = LogInModule;
+			sourceTree = "<group>";
+		};
+		5186226A283FF10C00ECFF11 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5186227228400AFC00ECFF11 /* LogInPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5186226B283FF11500ECFF11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5186226D283FF13600ECFF11 /* LogInViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5186226C283FF11A00ECFF11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		51B9E7A0283829A3007B9D76 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				51B9E7A1283829B4007B9D76 /* FlieManagerService.swift */,
+				5162C5462845637C00DA4538 /* KeychainService.swift */,
+				51E91B582846B8D80070AB31 /* UserDefaultsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -121,7 +209,6 @@
 		51B9E7A728384264007B9D76 /* ModuleAssembly */ = {
 			isa = PBXGroup;
 			children = (
-				51B9E7A52838424D007B9D76 /* PhotoMainModuleAssembly.swift */,
 				51B9E7A828384289007B9D76 /* ModuleAssembly.swift */,
 			);
 			path = ModuleAssembly;
@@ -143,6 +230,9 @@
 			dependencies = (
 			);
 			name = PhotoManager;
+			packageProductDependencies = (
+				51862267283FF0E300ECFF11 /* KeychainAccess */,
+			);
 			productName = PhotoManager;
 			productReference = 510644D42836DF370086210E /* PhotoManager.app */;
 			productType = "com.apple.product-type.application";
@@ -171,6 +261,9 @@
 				Base,
 			);
 			mainGroup = 510644CB2836DF370086210E;
+			packageReferences = (
+				51862266283FF0E300ECFF11 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 510644D52836DF370086210E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,10 +294,17 @@
 				51B9E7AB2838464D007B9D76 /* PhotoCollectionViewCell.swift in Sources */,
 				51B9E7A42838315E007B9D76 /* PhotoPresenter.swift in Sources */,
 				510644DC2836DF370086210E /* PhotoViewController.swift in Sources */,
+				510D6E06283D832500078922 /* SettingsTableViewCell.swift in Sources */,
 				510644D82836DF370086210E /* AppDelegate.swift in Sources */,
+				51862271283FF4DA00ECFF11 /* Coordinator.swift in Sources */,
+				5186226E283FF13600ECFF11 /* LogInViewController.swift in Sources */,
 				510644DA2836DF370086210E /* SceneDelegate.swift in Sources */,
 				51B9E7A2283829B4007B9D76 /* FlieManagerService.swift in Sources */,
-				51B9E7A62838424D007B9D76 /* PhotoMainModuleAssembly.swift in Sources */,
+				5138B5AE283B5E0D0062DEB3 /* SettingsViewController.swift in Sources */,
+				5162C5472845637C00DA4538 /* KeychainService.swift in Sources */,
+				51E91B592846B8D80070AB31 /* UserDefaultsService.swift in Sources */,
+				5186227328400AFC00ECFF11 /* LogInPresenter.swift in Sources */,
+				5138B5B2283B5E260062DEB3 /* SettingsPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +516,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		51862266283FF0E300ECFF11 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		51862267283FF0E300ECFF11 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51862266283FF0E300ECFF11 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 510644CC2836DF370086210E /* Project object */;
 }

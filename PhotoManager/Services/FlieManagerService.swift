@@ -1,5 +1,4 @@
 import Foundation
-import UIKit
 
 class FileManagerService {
     private let url: URL = {
@@ -24,7 +23,7 @@ class FileManagerService {
     func removeImage(path: String) -> Result<Bool, Error> {
         do {
             try FileManager.default.removeItem(atPath: path)
-            return.success(true)
+            return .success(true)
         } catch {
             return .failure(error)
         }
