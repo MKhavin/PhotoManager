@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  PhotoManager
-//
-//  Created by Michael Khavin on 19.05.2022.
-//
-
 import UIKit
 import PhotosUI
 
@@ -47,6 +40,11 @@ extension PhotoViewController {
         setNavigationBar()
         setLayout()
         setCollectionGesture()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        presenter.setImagesCollectionOrder()
+        photosCollection.reloadData()
     }
 }
 

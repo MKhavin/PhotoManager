@@ -1,10 +1,3 @@
-//
-//  PhotoCollectionViewCell.swift
-//  PhotoManager
-//
-//  Created by Michael Khavin on 21.05.2022.
-//
-
 import UIKit
 
 class PhotoCollectionViewCell: UICollectionViewCell {

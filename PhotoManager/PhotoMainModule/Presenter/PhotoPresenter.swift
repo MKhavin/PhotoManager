@@ -2,20 +2,28 @@ import Foundation
 
 protocol PhotosPresenter: AnyObject {
     var photosCollection: [String]? { get }
-    init(view: PhotosView, fileManager: FileManagerService)
+    init(view: PhotosView, fileManager: FileManagerService, userDefaults: UserDefaultsService, coordinator: MainCoordinator)
     func getImagesCollection()
     func deleteImage(photo: Int)
     func addImage(by data: Data?)
+    func setImagesCollectionOrder()
 }
 
 class PhotoPresenter: PhotosPresenter {
     private weak var view: PhotosView?
     private let fileManager: FileManagerService
     private(set) var photosCollection: [String]?
+    private let userDefaults: UserDefaultsService
+    var coordinator: MainCoordinator
     
-    required init(view: PhotosView, fileManager: FileManagerService) {
+    required init(view: PhotosView,
+                  fileManager: FileManagerService,
+                  userDefaults: UserDefaultsService,
+                  coordinator: MainCoordinator) {
         self.view = view
         self.fileManager = fileManager
+        self.coordinator = coordinator
+        self.userDefaults = userDefaults
         getImagesCollection()
     }
     
@@ -26,6 +34,17 @@ class PhotoPresenter: PhotosPresenter {
             photosCollection = collection
         case .failure(let error):
             view?.showError(message: error.localizedDescription)
+        }
+    }
+    
+    func setImagesCollectionOrder() {
+        let currentOrder = userDefaults.getOrderSettings()
+        photosCollection?.sort {
+            if currentOrder == .ascending {
+                return $0 < $1
+            } else {
+                return $0 > $1
+            }
         }
     }
     
